@@ -697,13 +697,14 @@ body{
 }
 
 #footer{
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     /* background-color: red; */
     padding-left: 28%;
     padding-right: 2vw;
     position: relative;
     background-color: #151515;
+    padding-bottom: 5vw;
 }
 .under-line{
     height: 2px;
