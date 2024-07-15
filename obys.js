@@ -176,11 +176,6 @@ function flagAnimation(){
 }
 
 
-LoaderPage()
-cursorAnimation()
-locomotiveAnimation()
-sheryAnimation()
-flagAnimation()
 
 function footerAnimation() {
   gsap.from("#footer h1",{
@@ -202,7 +197,23 @@ $(document).ready(function() {
   $('#footer h1').on('mouseenter', footerAnimation);
 });
 
-footerAnimation()
+function applyAnimations() {
+  LoaderPage()
+  footerAnimation();
+  sheryAnimation()
+  cursorAnimation()
+  
+ 
+  if (window.matchMedia("(min-width: 601px)").matches) {
+    locomotiveAnimation()
+    flagAnimation()
+  }
+}
+
+applyAnimations();
+window.addEventListener('resize', applyAnimations);
+
+
 
 
 
