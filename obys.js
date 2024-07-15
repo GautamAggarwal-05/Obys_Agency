@@ -176,7 +176,11 @@ function flagAnimation(){
 }
 
 
-
+LoaderPage()
+cursorAnimation()
+locomotiveAnimation()
+sheryAnimation()
+flagAnimation()
 function footerAnimation() {
   gsap.from("#footer h1",{
     opacity:1,
@@ -197,21 +201,8 @@ $(document).ready(function() {
   $('#footer h1').on('mouseenter', footerAnimation);
 });
 
-function applyAnimations() {
-  LoaderPage()
-  footerAnimation();
-  sheryAnimation()
- 
-  
- 
-  if (window.matchMedia("(min-width: 601px)").matches) {
-    locomotiveAnimation()
-    flagAnimation()
-    cursorAnimation()
-  }
-}
+footerAnimation()
 
-applyAnimations();
 window.addEventListener('resize', applyAnimations);
 
 
