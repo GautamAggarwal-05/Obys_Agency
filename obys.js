@@ -201,12 +201,13 @@ function applyAnimations() {
   LoaderPage()
   footerAnimation();
   sheryAnimation()
-  cursorAnimation()
+ 
   
  
   if (window.matchMedia("(min-width: 601px)").matches) {
     locomotiveAnimation()
     flagAnimation()
+    cursorAnimation()
   }
 }
 
